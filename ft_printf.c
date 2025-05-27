@@ -40,6 +40,8 @@ int	ft_printf(const char *str, ...)
 	int		i;
 	int		count;
 
+	if (!str)
+		return (-1);
 	va_start(args, str);
 	i = 0;
 	count = 0;
